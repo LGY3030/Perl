@@ -75,3 +75,16 @@ do{	#do-while
 print("\n");
 
 # break & continue == last & next
+while(chomp($i=<STDIN>)) {
+	next if ($i == 5);
+	last unless ($i > 10);
+}
+
+while(chomp($i=<STDIN>)) {
+	if ($i == 5){
+		next;
+	}
+	if($i==2){
+		last;
+	}
+}
